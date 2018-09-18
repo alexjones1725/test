@@ -83,7 +83,7 @@ paths:
                   next: 
                     type: string
                   entities: 
-                    - $ref: '#/components/schemas/names'
+                    $ref: '#/components/schemas/names'
                 example: 
                   count: 295496
                   selection: 
@@ -122,7 +122,7 @@ paths:
                   next: 
                     type: string
                   entities: 
-                    - $ref: '#/components/schemas/names'
+                    $ref: '#/components/schemas/names'
                 example: 
                   count: 114
                   selection: 
@@ -161,7 +161,7 @@ paths:
                   next: 
                     type: string
                   entities: 
-                    - $ref: '#/components/schemas/symbols'
+                    $ref: '#/components/schemas/symbols'
                 example: 
                   count: 56720
                   selection: 
@@ -202,7 +202,7 @@ paths:
                   entities: 
                     type: array
                     items: 
-                      - $ref: '#/components/schemas/names'
+                      $ref: '#/components/schemas/names'
                 example: 
                   count: 332715
                   selection: 
@@ -241,7 +241,7 @@ paths:
                   next: 
                     type: string
                   entities: 
-                    - $ref: '#/components/schemas/names'
+                    $ref: '#/components/schemas/names'
                 example: 
                   count: 309
                   selection: 
@@ -280,7 +280,7 @@ paths:
                   next: 
                     type: string
                   entities: 
-                    - $ref: '#/components/schemas/names'
+                    $ref: '#/components/schemas/names'
                 example:
                   count: 89
                   selection: 
@@ -319,7 +319,7 @@ paths:
                   next: 
                     type: string
                   entities: 
-                    - $ref: '#/components/schemas/symbols'
+                    $ref: '#/components/schemas/symbols'
                 example:
                   count: 19673
                   selection:
@@ -358,7 +358,7 @@ paths:
                   next: 
                     type: string
                   entities: 
-                    - $ref: '#/components/schemas/names'
+                    $ref: '#/components/schemas/names'
                 example:
                   count: 66
                   selection: 
@@ -832,14 +832,14 @@ components:
       items: 
         type: integer
     names:
-      type: object
+      type: array
       properties: 
         name: 
           type: string
         href: 
           type: string
     symbols:
-      type: object
+      type: array
       properties: 
         symbol: 
           type: string
